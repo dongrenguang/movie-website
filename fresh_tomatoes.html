@@ -58,8 +58,7 @@
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            var sourceUrl = $(this).attr('data-source-url') + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
@@ -91,7 +90,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Main Page Content -->
     <div class="container">
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -104,32 +103,32 @@
     </div>
     <div class="container">
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-source-url="http://59.108.140.32/vhot2.qqvideo.tc.qq.com/AWwBSK8Buv93HSGWbYFQIsWCoEGmW2BexdO4xpYVMEMU/x052612vu0v.p712.1.mp4?sdtfrom=v1010&guid=0a4e1676c4e7dc81f10a388917982cb9&vkey=44683E0FCB93511AFD89824883E0B7E2BE8844ECA549C1DC9263DCDF805A59D6A882302BAFDEE85210DD1AA80D6E08BD2B3CC59AF8FFAE2CF0C416A899AE5BED4E4D9DC113CB433DDED303F2D94FE5CB7C3063E73A01E343A972030CF9ECD0C68DF3ED0B0FF7D109E2DE354D0DE88FBF7365BE9B8BC434AB&platform=2" data-toggle="modal" data-target="#trailer">
     <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p1271999126.webp" width="220" height="342">
     <h2>Hello！树先生</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-source-url="http://ugc-vliveochy.tc.qq.com/vhot2.qqvideo.tc.qq.com/A-xcyNaE3NRBuUqJRsYgxaPkUZkn4aVkby5bEKwHJkaY/t0527z01gfv.p712.1.mp4?sdtfrom=v1010&guid=0a4e1676c4e7dc81f10a388917982cb9&vkey=E799FF2819298FC4FF1222674AC2B760EE43C749FA8096253EA7618A90159B8E2131EC7641BA68C6BBA30BEC4AE03BD63606A69577C56BEA169E01C990F685A394D88EC0A24F89326FD02D2C10B12C0CF014B900EBAEF418ECA0CF17134F12B7DDD04CA41C14EBA833A3CE429AA81D41E8A2BE8D34B37F25&platform=2&ocid=552147116" data-toggle="modal" data-target="#trailer">
     <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2332714135.webp" width="220" height="342">
     <h2>百鸟朝凤</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-source-url="http://112.65.194.84/vhot2.qqvideo.tc.qq.com/AHA_M5GYjkJarj5dssIKtpwZDxk80K0V15n5DgVVeKqw/t039532vfgc.p712.1.mp4?sha=AC5971D25DB7FED2D7FCBDECEE605B8A4691B9AC&sdtfrom=v1010&guid=0a4e1676c4e7dc81f10a388917982cb9&vkey=B4E332B241079EE10A6BA39F99A0F41B8650B01B623FBE41BA6F073D8293CDBB4D334DE65E897E89DD6AC5FD9B6E1B24AD169FA4902C3228EE81FFE8B242BABA1DE574561904B94F64D78903522D5581E2AD88BB0FD8C397385C3BE2B7F3333121F0BD00E56BC5608429A058E56C0D0CAF239F923A95CF9F&platform=2&ocid=518592684&ocid=659625388&ocid=2190013450" data-toggle="modal" data-target="#trailer">
     <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p513303986.webp" width="220" height="342">
     <h2>这个男人来自地球</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-source-url="http://111.202.117.156/vhot2.qqvideo.tc.qq.com/ARzgF_D88JZ2I3sBNTapu3ZAnhCfne-DbTfNd4g97sPE/l03605fqz3t.p712.1.mp4?sdtfrom=v1010&guid=0a4e1676c4e7dc81f10a388917982cb9&vkey=F7E9E748F7CB267E81CDEF7DD862DB294D7A020D8ED6A88867BF0DF10D99203E6AE21B6588465BBF59E2CC0BBD0FBC3219F81DADCAA665F2242AD86AC89184E0F1E0F157DCE7288F7113E8F4AEC4D6CFC0ECC4569137E2DD23E090401C9B9592219793C2B054152A7CD822BF66003469409A0DD8D031F9FF&platform=2&ocid=552147116&locid=4c48d1b2-01b0-4ce8-b880-240200319ecd&size=8434489&ocid=391189932" data-toggle="modal" data-target="#trailer">
     <img src="https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2408407697.webp" width="220" height="342">
     <h2>乘风破浪</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-source-url="http://140.207.128.232/vhot2.qqvideo.tc.qq.com/A66Plzc0PXZgXehIES90chP_MrMMWAGE9EZMYUVLOExk/e0527urs8wz.mp4?sha=15CF056E383BC018C0318B823B5C94A9C51435DB&sdtfrom=v1010&guid=0a4e1676c4e7dc81f10a388917982cb9&vkey=8DEDC8F0D85B3256BF47EF6D850BF6077DB0B693062CA89EFE0392BB2BE4C60128B20BCBE453E1A3ABEDA86BA0AD57336DA94844463C338C8EE803FAB41803B5503D197C3CB930BF2694DA7C8C015E1DB2397CC1116DF0C79FF7CEE3CD873E79CBCD6A15DE3AE65FA30B8E1183532331481F499A9DD3A6C8&platform=2&ocid=552147116&ocid=391189932&ocid=2868962570" data-toggle="modal" data-target="#trailer">
     <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2361744534.webp" width="220" height="342">
     <h2>大鱼海棠</h2>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-source-url="http://112.90.11.11/vhot2.qqvideo.tc.qq.com/ApbvzF7MspNmWZ9WhC3QVQShND9XU-PqU0Yo0yOjjhPA/a0179bld7yt.p702.1.mp4?sha=8A5EC09D9B53EF8AA04EAC5D4E5C56B56BCB069B&sdtfrom=v1010&guid=0a4e1676c4e7dc81f10a388917982cb9&vkey=408DDEA980982B60D03A11F2E150542F8ECC895482CFF071C7526468307DED7FD11ABCFCED5E7406ADCC2B63FBB8BB21DDB83678CB37047FEA1BC3C86680ABDC3CCBD097B99125EA436B6E8BCE2BFF09885E1E43B9576D66DF248F7A259485D450ADADD35FB6BFF016B3F29E723B70BACCDA3221D49FB7ED&platform=2&ocid=518592684&ocid=642848172&ocid=2852185354" data-toggle="modal" data-target="#trailer">
     <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2195672555.webp" width="220" height="342">
     <h2>千钧一发</h2>
 </div>
